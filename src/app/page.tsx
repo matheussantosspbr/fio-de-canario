@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ButtonLink from "./components/ButtonLink";
 import { LucideInstagram } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const whatsappText = "Olá, gostaria de comprar um Fio de Canário!";
@@ -15,9 +16,14 @@ export default function Home() {
           <h1 className="text-4xl font-bold norican-regular text-[#875b2d]">Fio de Canário</h1>
           <p className="text-xs bg-[#875b2d] rounded-full px-2 py-0.5 text-white mb-2">Onde o crochê ganha asas.💛🪽</p>
           <div>
-            <button onClick={() => window.open("https://www.instagram.com/fiodecanario", "_blank", "noopener,noreferrer")} className="h-10 w-10 cursor-pointer hover:bg-[#875b2d]/80 transition-colors bg-[#875b2d] rounded-full flex items-center justify-center text-white">
+            <Link
+              href="https://www.instagram.com/fiodecanario"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-10 w-10 cursor-pointer hover:bg-[#875b2d]/80 transition-colors bg-[#875b2d] rounded-full flex items-center justify-center text-white"
+            >
               <LucideInstagram />
-            </button>
+            </Link>
           </div>
         </div>
         <ButtonLink className="flex items-center justify-center gap-2 w-full" type="PRIMARY" href={`https://wa.me/${whatsappNumber}?text=${whatsappText.replaceAll(" ", "%20")}`}>
