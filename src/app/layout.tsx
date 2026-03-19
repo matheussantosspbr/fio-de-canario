@@ -14,6 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Fio de Canário",
   description: "Onde o crochê ganha asas.💛🪽",
+  keywords: "Fio de Canário, Crochê, Artesanato, Fios, Agulhas, Barbante, Algodão, Lã, Seda, Linho, roupas",
   icons: {
     icon: "/favicon.ico",
   }
