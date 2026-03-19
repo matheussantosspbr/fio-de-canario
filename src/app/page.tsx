@@ -6,8 +6,8 @@ export default function Home() {
   const whatsappText = "Olá, gostaria de comprar um Fio de Canário!";
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
   return (
-    <main className="flex flex-col items-center justify-between h-screen w-80 py-10">
-      <div className="flex flex-col items-center justify-center w-full">
+    <main className="flex flex-col items-center justify-between h-screen w-80">
+      <div className="flex flex-col items-center justify-center w-full mt-10">
         <div className="flex flex-col items-center justify-center mb-4">
           <figure>
             <Image src="/images/logo.png" alt="Logo" width={100} height={100} />
@@ -23,7 +23,7 @@ export default function Home() {
           <span className="text-white">Compre Aqui</span>
         </ButtonLink>
       </div>
-      <p className="text-xs font-medium text-white text-center">Feito com ♥ pelo Dev. Matheus Santos. <br />© 2026.</p>
+      <p className="text-xs font-medium text-white text-center mb-10">Feito com ♥ pelo Dev. Matheus Santos. <br />© 2026.</p>
     </main>
   );
 }
