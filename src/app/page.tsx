@@ -6,7 +6,7 @@ export default function Home() {
   const whatsappText = "Olá, gostaria de comprar um Fio de Canário!";
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
   return (
-    <main className="flex flex-col items-center justify-between h-screen w-80">
+    <main className="flex flex-col items-center justify-between min-h-dvh w-80">
       <div className="flex flex-col items-center justify-center w-full mt-10">
         <div className="flex flex-col items-center justify-center mb-4">
           <figure>
