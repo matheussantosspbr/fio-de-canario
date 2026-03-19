@@ -15,7 +15,9 @@ export default function Home() {
           <h1 className="text-4xl font-bold norican-regular text-[#875b2d]">Fio de Canário</h1>
           <p className="text-xs bg-[#875b2d] rounded-full px-2 py-0.5 text-white mb-2">Onde o crochê ganha asas.💛🪽</p>
           <div>
-            <button className="h-10 w-10 cursor-pointer hover:bg-[#875b2d]/80 transition-colors bg-[#875b2d] rounded-full flex items-center justify-center text-white"><LucideInstagram /></button>
+            <button onClick={() => window.open("https://www.instagram.com/fiodecanario", "_blank", "noopener,noreferrer")} className="h-10 w-10 cursor-pointer hover:bg-[#875b2d]/80 transition-colors bg-[#875b2d] rounded-full flex items-center justify-center text-white">
+              <LucideInstagram />
+            </button>
           </div>
         </div>
         <ButtonLink className="flex items-center justify-center gap-2 w-full" type="PRIMARY" href={`https://wa.me/${whatsappNumber}?text=${whatsappText.replaceAll(" ", "%20")}`}>
