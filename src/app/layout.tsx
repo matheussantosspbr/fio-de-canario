@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Norican } from "next/font/google";
 import "@/app/styles/globals.css";
 
@@ -7,12 +7,15 @@ const norican = Norican({
   weight: "400",
   variable: '--font-norican'
 });
+export const viewport: Viewport = {
+  themeColor: "#875b2d",
+};
 
 export const metadata: Metadata = {
   title: "Fio de Canário",
   description: "Onde o crochê ganha asas.💛🪽",
   icons: {
-    icon: "/images/logo.png",
+    icon: "/favicon.ico",
   }
 };
 
@@ -25,9 +28,8 @@ export default function RootLayout({
     <html lang="en" className={`h-full antialiased ${norican.variable}`}>
       <head>
         <script src="https://kit.fontawesome.com/22c21b90be.js" crossOrigin="anonymous"></script>
-        <meta name="theme-color" content="#875b2d" />
       </head>
-      <body className="min-h-full flex flex-col justify-center items-center">{children}</body>
+      <body className="h-full flex flex-col justify-center items-center">{children}</body>
     </html>
   );
 }
